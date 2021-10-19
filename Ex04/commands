@@ -1,0 +1,18 @@
+
+  417  mkdir test0 test1 test3 test5
+  418  touch -t '207701010000' test0 test1 test3 test5
+  419  ls -l
+  420  touch -t '207701010000' test2 test4
+  421  ls -l
+  422  chmod 775 test0
+  423  chmod 744 test1
+  424  chmod 664 test2
+  425  chmod 775 test2
+  426* chmod 664 test3
+  427  chmod 775 test3
+  428  chmod 664 test4
+  429  chmod 111 test5
+  430  ls -l
+  431  cd ..
+  432  history > commands
+
